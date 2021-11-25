@@ -1,0 +1,65 @@
+uname:prem
+pass:root
+------------------------------------
+1.fulltime 
+2.half time
+3.take leave 
+----------------------------------------
+{
+employee id = 001
+employee name  =prem patel
+job type = fulltime
+total hours of month = 26 * 8 = 208 
+your attented hours = 24 * 8 = 200
+your salary = 200 * 40 = 8000
+-------------------------------
+your absent days  
+----------------------------------------
+ 2/2/21  leave report submitted
+3/2/21 leave report not submitted
+-----------------------------------------	
+over time
+----------------------------------
+5 * 45 = 225
+press 1 to get salaryslip : 1
+=====================================
+{
+employee id = 001
+employee name  =prem patel
+job type = fulltime
+total hours of month = 26 * 5 = 208 
+your attented hours = 24 * 5 = 200
+your salary = 200 * 40 = 8000
+-------------------------------
+your absent days  
+----------------------------------------
+ 2/2/21  leave report submitted
+3/2/21 leave report not submitted
+-----------------------------------------	
+over time
+----------------------------------
+5 * 45 = 225
+press 1 to get salaryslip : 1
+------------------------------------------------
+-------salary slip ------------
+employee id = 001
+employee name  = prem patel
+job type = fulltime
+total  salary = 8000
+pf = 8.5%  = 680
+over time = 225 / 0
+total = 7545
+press 0 to go back : 0 
+-------------------------------------------------
+}
+
+---------------------------take leave---------------------------------
+you have to apply for leave before 2 days
+
+name = prem patel
+emp id = 001
+job type = full time
+date of leave = 2/2/21
+reason = ******************
+do you want to take leave (y/n) :
+-------------------------------------------------------------------------------

@@ -1,0 +1,43 @@
+*********************Login Table*************************
+create table login
+(
+    uname varchar(10),
+    pass varchar(10),
+    empid int,
+   foreign key(empid) references emp(empid)
+);
+******************Empployee***********************
+create table emp
+(
+    empid int  primary key,
+    name varchar(25),
+    jobType varchar(10),
+    totaldayofmonth int,
+    currentdayofmonth int,
+    absentDays int default 0,
+    overtime int
+);
+
+
+***************Employe leave **********************
+
+create table employeeLeave
+(
+    empid int,
+    leavedate date,
+    reason varchar(50) default 'No Reason Given',
+    foreign key(empid) references emp(empid)
+);
+
+******************Stored Procedure******************
+delimiter &&
+create procedure change_date(in eid int,in curday date)
+begin
+	declare monthday int default 0;
+    
+	select Date_format(last_day(now()),'%d') into monthday;
+    update emp set totaldayofmonth = monthday where empid = eid;
+    update emp set currentdayofmonth = (date_format(curday,'%d')) where empid = eid;
+end&&
+call change_date(1,'2021-04-21');
+delimiter ;
